@@ -54,14 +54,12 @@ body {
     font-size: 14px;
 }
 
-/* Layout Container */
 .container {
     max-width: 1200px;
     margin: 20px auto;
     padding: 0 20px;
 }
 
-/* Banner */
 .hero-banner {
     width: 100%;
     height: 350px;
@@ -76,7 +74,6 @@ body {
     object-fit: cover;
 }
 
-/* Fileira de Gêneros */
 .genres-row {
     display: flex;
     justify-content: space-between;
@@ -88,13 +85,13 @@ body {
     flex: 1;
     height: 120px;
     background: #000;
-    border-radius: 60px; /* Efeito oval */
+    border-radius: 60px; 
     position: relative;
     overflow: hidden;
     color: white;
     display: flex;
     align-items: center;
-    padding-left: 110px; /* Espaço para a foto */
+    padding-left: 110px; 
     cursor: pointer;
 }
 
@@ -115,7 +112,7 @@ body {
     font-size: 12px;
 }
 
-/* Grid de Playlists */
+
 .section-title {
     font-size: 28px;
     margin-bottom: 20px;
@@ -147,7 +144,7 @@ body {
     transform: scale(1.02);
 }
 
-/* Cores específicas dos cards */
+
 .card-funk { background-color: #a2ff00; color: #8000ff; }
 .card-ouvidos { background: linear-gradient(45deg, #4b0082, #8a2be2); }
 .card-gospel { background-color: #e0b0ff; }
