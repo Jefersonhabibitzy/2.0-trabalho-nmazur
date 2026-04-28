@@ -3,49 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ITZY | MUSIC.WORD</title>
+    <title>Music Word - Clone</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <nav>
-            <div class="logo">MUSIC.WORD</div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#musica">Música</a></li>
-                <li><a href="#agenda">Agenda</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
+    <header class="navbar">
+        <div class="search-bar">
+            <input type="text" placeholder="o que você quer ouvir?">
+            <span class="search-icon">🔍</span>
+        </div>
+        
+        <div class="logo">
+            <h1>MUSIC<span>WORD</span></h1>
+        </div>
+
+        <nav class="nav-links">
+            <a href="#">artistas</a>
+            <a href="#">músicas</a>
+            <a href="#">playlist</a>
+            <a href="#">podcast</a>
+            <div class="profile-icon">👤</div>
         </nav>
     </header>
 
-    <main>
-        <section id="home" class="hero">
-            <h1>ITZY: "MOTTO"</h1>
-            <button>Ouça Agora</button>
+    <main class="container">
+        <section class="hero-banner">
+            <img src="LINK_DA_IMAGEM_AQUI" alt="Tunnel Vision Banner">
         </section>
 
-        <section id="musica">
-            <h2>Discografia</h2>
-            <article class="track">
-                <h3>Single Atemporal</h3>
-                <audio controls>
-                    <source src="colocar aq o audioem formato mp3" type="audio/mpeg">
-                audio
-                </audio>
-            </article>
+        <section class="genres-row">
+            <div class="genre-card">
+                <img src="LINK_DA_IMAGEM_AQUI" alt="Forró">
+                <div class="genre-text">forró khamaizar</div>
+            </div>
+            <div class="genre-card">
+                <img src="LINK_DA_IMAGEM_AQUI" alt="Hiphop">
+                <div class="genre-text">hiphop ythalo riam</div>
+            </div>
+            <div class="genre-card">
+                <img src="LINK_DA_IMAGEM_AQUI" alt="Axé">
+                <div class="genre-text">axé xamma</div>
+            </div>
+            <div class="genre-card">
+                <img src="LINK_DA_IMAGEM_AQUI" alt="Pagode">
+                <div class="genre-text">pagode lucas ortega</div>
+            </div>
+        </section>
 
-    <div class="fixed-player">
-        <p>Tocando agora: BABYDOLL</p>
-        <button>Prev</button>
-        <button>Play/Pause</button>
-        <button>Next</button>
-    </div>
-
-    <footer>
-        <p>&copy; 2026 ITZY. Todos os direitos reservados.</p>
-    </footer>
+        <section class="playlists-section">
+            <h2 class="section-title">ESCOLHA UMA PLAYLIST</h2>
+            <div class="playlist-grid">
+                <div class="card card-funk">FUNK MTG</div>
+                <div class="card card-ouvidos">ARTISTAS + OUVIDOS</div>
+                <div class="card card-gospel">GERAÇÃO NOVO GOSPEL</div>
+                <div class="card card-trappers">TRAPPERS</div>
+                <div class="card card-tiktok">MÚSICAS PARA TIKTOK</div>
+                <div class="card card-amava">AMAVA COISA NENHUMA</div>
+                <div class="card card-forro">FORRÓ DE PAREDÃO</div>
+                <div class="card card-brasil">BRASIL ALTERNATIVO</div>
+            </div>
+        </section>
+    </main>
 
 </body>
 </html>

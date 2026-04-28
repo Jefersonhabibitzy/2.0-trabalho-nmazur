@@ -2,40 +2,157 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-    background-color: #f0f0f0; 
-    color: #000;
+    background-color: #f5f5f5;
+    color: #333;
 }
 
-header {
+/* Navbar */
+.navbar {
     background-color: #000;
-    color: white;
-    padding: 15px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 15px 5%;
+    color: white;
+}
+
+.search-bar {
+    position: relative;
+    width: 300px;
 }
 
 .search-bar input {
+    width: 100%;
     padding: 8px 15px;
     border-radius: 20px;
     border: none;
-    width: 250px;
+    background: #e0e0e0;
 }
 
 .logo h1 {
-    font-size: 1.5rem;
+    font-size: 24px;
     letter-spacing: 2px;
 }
 
-nav {
+.logo span {
+    font-weight: 300;
+}
+
+.nav-links {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-nav a {
+.nav-links a {
     color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Layout Container */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Banner */
+.hero-banner {
+    width: 100%;
+    height: 350px;
+    border-radius: 40px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.hero-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Fileira de Gêneros */
+.genres-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.genre-card {
+    flex: 1;
+    height: 120px;
+    background: #000;
+    border-radius: 60px; /* Efeito oval */
+    position: relative;
+    overflow: hidden;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 110px; /* Espaço para a foto */
+    cursor: pointer;
+}
+
+.genre-card img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 10px;
+}
+
+.genre-text {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+/* Grid de Playlists */
+.section-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.playlist-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.card {
+    height: 140px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-weight: 900;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+/* Cores específicas dos cards */
+.card-funk { background-color: #a2ff00; color: #8000ff; }
+.card-ouvidos { background: linear-gradient(45deg, #4b0082, #8a2be2); }
+.card-gospel { background-color: #e0b0ff; }
+.card-trappers { background-color: #1a1a1a; }
+.card-tiktok { background-color: #ff0050; }
+.card-amava { background-color: #ff3b3b; }
+.card-forro { background-color: #0000ff; }
+.card-brasil { background: linear-gradient(to bottom right, #ff8c00, #2e8b57); }
